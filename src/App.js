@@ -8,7 +8,6 @@ import Home from "./Pages/Home";
 import SignIn from "./Pages/SignIn";
 import SignUp from "./Pages/SignUp";
 
-
 //import pour firebase ui
 import firebase from 'firebase/compat/app';
 import * as firebaseui from 'firebaseui'

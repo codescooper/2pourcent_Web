@@ -1,9 +1,16 @@
 import React from "react";
 import Nav from 'react-bootstrap/Nav'
 import NavDropdown from 'react-bootstrap/NavDropdown'
+import { getAuth, signOut } from "firebase/auth";
+
+
 
 function Navbar() {
     // const handleSelect = (eventKey) => alert(`selected ${eventKey}`);
+    const handleSignOut = () => {
+        const auth = getAuth();
+        signOut(auth);
+    }
   
     return (
       <Nav variant="pills" activeKey="3">
@@ -31,7 +38,12 @@ function Navbar() {
         </Nav.Item>
         <Nav.Item>
           <Nav.Link href="/signin" eventKey="3" >
-            Se connercter
+            Se connecter
+          </Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Nav.Link href="/signin" eventKey="3" onClick={handleSignOut}>
+            Se deconnecter
           </Nav.Link>
         </Nav.Item>
       </Nav>
