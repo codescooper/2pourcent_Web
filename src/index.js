@@ -9,13 +9,10 @@ import reportWebVitals from './reportWebVitals';
   
 //faire fonctionner la navigation au de l'app
 import {BrowserRouter} from "react-router-dom";
-const container  =   document.getElementById('root');
-const root = createRoot(container);
-
-root.render(
-  <BrowserRouter>
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
     <App />
-  </BrowserRouter>
+  </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function

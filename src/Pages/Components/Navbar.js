@@ -1,6 +1,6 @@
 import React from "react";
-import Nav from 'react-bootstrap/Nav'
-import NavDropdown from 'react-bootstrap/NavDropdown'
+import Nav from 'react-bootstrap/Nav';
+import NavDropdown from 'react-bootstrap/NavDropdown';
 import { getAuth, signOut } from "firebase/auth";
 
 
@@ -32,7 +32,7 @@ function Navbar() {
           <NavDropdown.Item eventKey="4.4">SMS Alert</NavDropdown.Item>
         </NavDropdown>
         <Nav.Item>
-          <Nav.Link href="/signup"  title="Item">
+          <Nav.Link href="/signup" title="Item">
             S'inscrire
           </Nav.Link>
         </Nav.Item>
